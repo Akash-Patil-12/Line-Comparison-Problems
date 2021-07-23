@@ -6,7 +6,8 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome");
+            Line lineobj = new Line(12, 23, 22, 30);
+            lineobj.lengthOfLine();
         }
     }
 }
