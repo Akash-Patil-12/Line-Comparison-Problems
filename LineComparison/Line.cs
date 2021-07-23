@@ -15,12 +15,12 @@ namespace LineComparison
             this.pointY2 = pointY2;
         }
         /// <summary>
-        /// Calculate length of line
+        /// Return length of line
         /// </summary>
-        public void lengthOfLine()
+        public double lengthOfLine()
         {
             double length = Math.Sqrt((pointX2 - pointX1) ^ 2 + (pointY2 - pointY1) ^ 2);
-            Console.WriteLine("Length of Line is : " + length);
+            return length;
         }
     }
 }
