@@ -22,5 +22,19 @@ namespace LineComparison
             double length = Math.Sqrt((pointX2 - pointX1) ^ 2 + (pointY2 - pointY1) ^ 2);
             return length;
         }
+        public void CompareLine(double line1,double line2)
+        {
+            Console.WriteLine("Line One value :" + line1 + " Line Second value :" + line2);
+            if (line1.CompareTo(line2) == 0)
+            {
+                Console.WriteLine("Both lines are equals");
+            }
+            if (line1.CompareTo(line2) > 0)
+            {
+                Console.WriteLine("Line One is gratter than Second");
+            }
+            else
+                Console.WriteLine("Line One is less than Second");
+        }
     }
 }
